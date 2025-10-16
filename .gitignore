@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# Virtual environment
+venv/
+env/
+*.env
+*.venv
+
+# Django specific
+db.sqlite3
+/media/
+staticfiles/
+*.log
+
+# IDE and editor configs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Pytest / coverage
+.coverage
+.pytest_cache/
+htmlcov/
+*.cover
+
+# Migration backups
+*.bak
+
+# Node and frontend stuff (if you use Tailwind/React etc.)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json

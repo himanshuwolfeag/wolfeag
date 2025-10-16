@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'Styles/style.css' %}">
+</head>
+<body>
+    <header id="Navbar" class="fixed top-0 left-0 w-full bg-transparent  backdrop-filter shadow-md z-50 transition-all duration-300 ease-in-out">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-rih">
+            <div class="logo">
+                <h1 class="text-2xl encode-sans-semi-expanded-extralight  text-white ">Wolfeag Consultancy</h1>
+                <!-- backdrop-blur-lg  [#4E021B]  -->
+            </div>
+            
+            <!-- Main Menu (Desktop) -->
+            <ul class="hidden md:flex mt-2 ml-[20rem] space-x-6 text-white encode-sans-semi-expanded-regular font-semibold">
+                <!-- <li><a href="#" class="nav-link-hover">Home</a></li> -->
+                <li class="relative dropdown-container">
+                    <a href="#" class="nav-link-hover flex items-center">
+                        Services
+                    </a>
+                    <div class="dropdown-menu fixed left-0 right-0 top-[68px] bg-white p-6 rounded-lg shadow-xl text-gray-700 z-40">
+                        <div class="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Mobile</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Web</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Back-End Development</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Front-End Development</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">CMS</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Custom CMS</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Enterprise Content Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Headless CMS</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Product Design</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">UI/UX Services</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Future Engineering</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">AI Services</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Generative AI</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Enterprise Mobility</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">EMM Solutions</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile Device Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Enterprise App Development</h4>
+                                <p class="text-sm text-gray-500">
+                                    Empower your community with our custom app development services.
+                                </p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <h4 class="font-bold mb-2">COMMUNITY APP</h4>
+                                <p class="text-sm text-gray-600 mb-4">
+                                    Empower your community with our custom App Development Services, Designed to Foster Engagement, Streamline Communication, and Enhance Connectivity.
+                                </p>
+                                <button class="bg-blue-500 text-white text-sm font-bold py-2 px-4 rounded-full hover:bg-blue-600 transition-colors duration-200">Explore Now</button>
+                                <h4 class="font-bold mt-6 mb-2">Our Recent Success Stories</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="text-blue-600 hover:underline">Yatra Freight <i class="fa fa-arrow-right"></i></a></li>
+                                    <li><a href="#" class="text-blue-600 hover:underline">Hospice Care <i class="fa fa-arrow-right"></i></a></li>
+                                    <li><a href="#" class="text-blue-600 hover:underline">Cloud Based FusePLM <i class="fa fa-arrow-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="relative dropdown-container">
+                    <a href="#" class="nav-link-hover flex items-center">
+                        Technology
+                    </a>
+                    <div class="dropdown-menu fixed left-0 right-0 top-[68px] bg-white p-6 rounded-lg shadow-xl text-gray-700 z-40">
+                        <div class="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Mobile</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Web</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Back-End Development</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Front-End Development</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">CMS</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Custom CMS</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Enterprise Content Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Headless CMS</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Product Design</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">UI/UX Services</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Future Engineering</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">AI Services</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Generative AI</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Enterprise Mobility</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">EMM Solutions</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile Device Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Enterprise App Development</h4>
+                                <p class="text-sm text-gray-500">
+                                    Empower your community with our custom app development services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="relative dropdown-container">
+                    <a href="#" class="nav-link-hover flex items-center">
+                        Industries
+                    </a>
+                    <div class="dropdown-menu fixed left-0 right-0 top-[68px] bg-white p-6 rounded-lg shadow-xl text-gray-700 z-40">
+                        <div class="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Mobile</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Web</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Back-End Development</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Front-End Development</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">CMS</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Custom CMS</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Enterprise Content Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Headless CMS</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Product Design</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">UI/UX Services</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Future Engineering</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">AI Services</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Generative AI</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Enterprise Mobility</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">EMM Solutions</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile Device Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Enterprise App Development</h4>
+                                <p class="text-sm text-gray-500">
+                                    Empower your community with our custom app development services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="relative dropdown-container">
+                    <a href="#" class="nav-link-hover flex items-center">
+                        Our Work
+                    </a>
+                    <div class="dropdown-menu fixed left-0 right-0 top-[68px] bg-white p-6 rounded-lg shadow-xl text-gray-700 z-40">
+                        <div class="container mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div>
+                                <h4 class="font-bold mb-2">Mobile</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Web</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Back-End Development</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Front-End Development</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">CMS</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Custom CMS</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Enterprise Content Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Headless CMS</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Product Design</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">UI/UX Services</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Future Engineering</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">AI Services</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Generative AI</a></li>
+                                </ul>
+                                <h4 class="font-bold mt-4 mb-2">Enterprise Mobility</h4>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile App Management</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">EMM Solutions</a></li>
+                                    <li><a href="#" class="block hover:text-blue-600">Mobile Device Management</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Enterprise App Development</h4>
+                                <p class="text-sm text-gray-500">
+                                    Empower your community with our custom app development services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-link-hover">Blogs</a></li>
+            </ul>
+            <button class="hidden md:block border-2 text-white encode-sans-condensed-medium py-2 px-6 rounded-full hover:bg-[#6c0d22] transition-colors duration-200">Get In Touch</button>
+
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-md">
+            <ul class="flex flex-col p-4 space-y-2 text-gray-700 font-semibold">
+                <!-- <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Home</a></li> -->
+                <li class="group">
+                    <button id="mobile-services-toggle" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 rounded-md">
+                        <span>Services</span>
+                        <svg class="w-4 h-4 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-services-dropdown" class="hidden pl-4 mt-2 space-y-1">
+                        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-md">Mobile App</a>
+                        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-md">Back-End Development</a>
+                        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-md">UI/UX Services</a>
+                        <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-md">AI Services</a>
+                        <!-- Add other services here for mobile -->
+                    </div>
+                </li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Technology</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Industries</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Our Work</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-md">Blogs</a></li>
+                <li><button class="w-full bg-blue-500 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors duration-200">Contact Us</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+    const navbar = document.getElementById('Navbar');
+    const defaultBg = 'bg-transparent'; // original navbar color
+    const scrollColor = 'bg-[#491222]'; // color when scrolled
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight) {
+            navbar.classList.remove(defaultBg);
+            navbar.classList.add(scrollColor);
+        } else {
+            navbar.classList.remove(scrollColor);
+            navbar.classList.add(defaultBg);
+        }
+    });
+</script>
+</body>
+</html>

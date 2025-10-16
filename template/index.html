@@ -1,0 +1,178 @@
+{%load static  %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfeag_Cunsultancy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'Styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/style1.css'%}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+
+    <!-- Hero Section -->
+    {% include 'hero-section.html' %}
+
+    <!-- Horizontal Section -->
+    <section id="section2-wrapper" class="relative overflow-hidden min-h-screen bg-white ">
+        <div id="horizontal-container" class="flex">
+            <!-- Horizontal Slide :- 01 -->
+            {% include 'section_1.html' %}
+
+            <!-- Horizontal Slide :- 02 -->
+            {% include 'section_2.html' %}
+
+            <!-- Horizontal Slide :- 03 -->
+            {% include 'section_3.html' %}
+
+            <!-- Horizontal Slide :- 04 -->
+            {% include 'section_4.html' %}
+        </div>
+    </section>
+
+
+    <!-- Vertical Scroll Section -->
+    <section id="section3" class="py-20 bg-[#491222]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Our Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-box">
+                        <h3 class="font-bold text-lg mb-2">Milestone 1</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur inventore dolorum pariatur quidem, exercitationem architecto molestias accusantium similique explicabo totam nam a autem ipsam, veniam consequuntur ullam eaque atque numquam!</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box">
+                        <h3 class="font-bold text-lg mb-2">Milestone 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis recusandae ipsum voluptatibus eaque? Doloremque recusandae illum dolor facere atque explicabo earum, dolorum architecto quae dolore vel, debitis cupiditate excepturi.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-box">
+                        <h3 class="font-bold text-lg mb-2">Milestone 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione et explicabo maiores dignissimos facilis dicta cupiditate sunt architecto, doloribus quis voluptates veniam neque voluptatum pariatur adipisci nesciunt culpa expedita soluta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 ">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="footer-left">
+                <h3 class="text-2xl font-bold mb-4">WolfEag Consultancy</h3>
+                <p class="text-gray-400 mb-2">WolfEag Consultancy © 2025</p>
+                <p class="footer-links flex flex-wrap gap-2 text-sm text-gray-300">
+                    <a href="#" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">Blog</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">Pricing</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">Faq</a>
+                    <a href="#" class="hover:text-blue-400 transition-colors">Contact</a>
+                </p>
+            </div>
+
+            <div class="footer-center text-gray-300">
+                <div class="flex items-center mb-4">
+                    <i class="fa fa-map-marker text-blue-500 mr-3"></i>
+                    <p>Indore, Madhya Pradesh 452001, IN</p>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fa fa-phone text-blue-500 mr-3"></i>
+                    <p>+91 1234567890</p>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-envelope text-blue-500 mr-3"></i>
+                    <p><a href="mailto:support@company.com" class="hover:text-blue-400 transition-colors">support@company.com</a></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <p class="text-lg font-semibold mb-4">About the company</p>
+                <p class="text-gray-400 mb-6">
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+                <div class="footer-icons flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/wolfeag-consultancy" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-500 transition-colors"><i class="fab fa-github-square fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // GSAP ScrollTrigger setup for horizontal scrolling
+        gsap.registerPlugin(ScrollTrigger);
+
+        const horizontalContainer = document.getElementById('horizontal-container');
+        const slides = gsap.utils.toArray('.horizontal-slide');
+
+        // Function to calculate and set the animation
+        const setupHorizontalScroll = () => {
+            let scrollWidth = 0;
+            slides.forEach(slide => {
+                scrollWidth += slide.offsetWidth;
+            });
+            const transformXValue = -(scrollWidth - window.innerWidth);
+            
+            // Remove any old ScrollTriggers before creating a new one
+            ScrollTrigger.getAll().forEach(trigger => {
+                if (trigger.trigger === document.getElementById('section2-wrapper')) {
+                    trigger.kill();
+                }
+            });
+
+            ScrollTrigger.create({
+                trigger: "#section2-wrapper",
+                pin: true,
+                start: "top top",
+                end: `+=${scrollWidth}`,
+                scrub: 1,
+                animation: gsap.to(horizontalContainer, {
+                    x: transformXValue,
+                    ease: "none"
+                }),
+            });
+        };
+
+        // Call the setup function on page load and window resize
+        window.addEventListener('load', setupHorizontalScroll);
+        window.addEventListener('resize', () => {
+            ScrollTrigger.refresh();
+            setupHorizontalScroll();
+        });
+
+        // Mobile menu toggle logic
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileServicesToggle = document.getElementById('mobile-services-toggle');
+        const mobileServicesDropdown = document.getElementById('mobile-services-dropdown');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // This is the added event listener for the mobile services dropdown
+        mobileServicesToggle.addEventListener('click', () => {
+            mobileServicesDropdown.classList.toggle('hidden');
+            const arrow = mobileServicesToggle.querySelector('svg');
+            arrow.classList.toggle('rotate-180');
+        });
+    </script>
+    
+</body>
+    
+</html>
